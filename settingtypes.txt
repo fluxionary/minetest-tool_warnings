@@ -1,7 +1,20 @@
+# if your tool has less than this amount of use time remaining depending on dig parameters, issue a warning
 tool_warnings:careful_time (careful time) float 8
+
+# if your tool has less than this amount of use time remaining depending on dig parameters, issue an urgent warning
 tool_warnings:urgent_time (urgent time) float 3
+
+# if your tool has fewer than this number of uses, issue a warning
 tool_warnings:careful_uses (careful uses) float 10
+
+# if your tool has fewer than this number of uses, issue an urgent warning
 tool_warnings:urgent_uses (urgent uses) float 5
+
+# if your tool has more than this amount of wear, issue a warning
 tool_warnings:careful_wear (careful wear) float 63500
+
+# if your tool has more than this amount of wear, issue an urgent warning
 tool_warnings:urgent_wear (urgent wear) float 64500
+
+# cooldown between sending different warning messages to a player via chat
 tool_warnings:warning_cooldown (warning cooldown) float 8
