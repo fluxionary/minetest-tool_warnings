@@ -1,7 +1,7 @@
-tool_warning:careful_time (careful time) float 8
-tool_warning:urgent_time (urgent time) float 3
-tool_warning:careful_uses (careful uses) float 10
-tool_warning:urgent_uses (urgent uses) float 5
-tool_warning:careful_wear (careful wear) float 63500
-tool_warning:urgent_wear (urgent wear) float 64500
-tool_warning:warning_cooldown (warning cooldown) float 8
+tool_warnings:careful_time (careful time) float 8
+tool_warnings:urgent_time (urgent time) float 3
+tool_warnings:careful_uses (careful uses) float 10
+tool_warnings:urgent_uses (urgent uses) float 5
+tool_warnings:careful_wear (careful wear) float 63500
+tool_warnings:urgent_wear (urgent wear) float 64500
+tool_warnings:warning_cooldown (warning cooldown) float 8
