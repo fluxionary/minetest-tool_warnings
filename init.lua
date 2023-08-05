@@ -29,7 +29,7 @@ local function caution_player(player, tool)
 	local last = last_caution_by_name[player_name]
 
 	if not last or now - last >= s.warning_cooldown then
-		local description = futil.futil.get_safe_short_description(tool)
+		local description = futil.get_safe_short_description(tool)
 		local msg = minetest.colorize("yellow", S("your @1 needs repair!"), minetest.strip_colors(description))
 		tool_warnings.chat_send_player(player_name, msg)
 		last_caution_by_name[player_name] = now
