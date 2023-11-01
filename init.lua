@@ -1,4 +1,4 @@
-tool_warnings = fmod.create()
+futil.check_version({ year = 2023, month = 11, day = 1 }) -- is_player
 
 local f = string.format
 local S = tool_warnings.S
@@ -290,7 +290,7 @@ minetest.register_on_mods_loaded(function()
 		if def.on_punch then
 			local old_on_punch = def.on_punch
 			function def.on_punch(self, puncher, time_from_last_punch, tool_capabilities, dir, damage)
-				if not minetest.is_player(puncher) then
+				if not futil.is_player(puncher) then
 					return old_on_punch(self, puncher, time_from_last_punch, tool_capabilities, dir, damage)
 				end
 
